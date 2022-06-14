@@ -1,5 +1,5 @@
 id: OVERWORLD
-version: 1.1.1
+version: 1.2.0
 author: "Astrash, Sancires, Aureus"
 
 generator: NOISE_3D
@@ -7,6 +7,7 @@ generator: NOISE_3D
 addons:
   biome-provider-pipeline: "1.+"
   biome-provider-single: "1.+"
+  biome-provider-extrusion: "1.+"
   chunk-generator-noise-3d: "1.+"
   config-biome: "1.+"
   config-flora: "1.+"
@@ -103,6 +104,9 @@ stages:
 
   - id: trees # Used for larger things that generate on the surface like trees, some other
     type: FEATURE # features are also treated as trees like ice spikes.
+
+  - id: postprocessors # Used to generate something that must come after all other features, such as snow on trees
+    type: FEATURE
 
 functions:
   "<<":

@@ -5,6 +5,7 @@ vanilla: minecraft:swamp
 color: $biomes/colors.yml:SWAMP
 
 tags:
+  - LAND_CAVES
   - USE_RIVER_FLAT_SWAMP
 
 colors:
@@ -21,7 +22,7 @@ palette:
 slant:
   - threshold: 2
     palette:
-      - GRASS: 319
+      - GRASS_MUDDY: 319
       - << meta.yml:palette-bottom
 
 slant-depth: 1

@@ -5,6 +5,7 @@ vanilla: minecraft:snowy_plains
 color: $biomes/colors.yml:SNOWY_PLAINS
 
 tags:
+  - LAND_CAVES
   - USE_FROZEN_RIVER_FLAT
 
 ocean:
@@ -20,5 +21,7 @@ features:
     - SNOW_LAYERS
   preprocessors:
     - ICE_COASTLINE
+  postprocessors:
+    - TREE_SNOW
   ores:
     - POWDER_SNOW_DEPOSITS
