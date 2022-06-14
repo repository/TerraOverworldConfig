@@ -8,8 +8,6 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    if: github.repository == 'PolyhedralDev/TerraOverworldConfig'
-
     env:
       repo_url: ${{ github.server_url }}/${{ github.repository }}
       changelog: CHANGELOG.md
